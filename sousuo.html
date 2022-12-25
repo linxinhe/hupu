@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>sousuo</title>
+    <link rel="stylesheet" href="./css/sousuo.css">
+    <script src="./font/iconfont.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <span>
+            <a href=".//index.html">
+                <svg class="icon-back " aria-hidden="true">
+                    <use xlink:href="#icon-fanhui"></use>
+                </svg>
+            </a>
+        </span>
+        <div>
+            <span>
+                <svg class="icon-sousuo" aria-hidden="true">
+                    <use xlink:href="#icon-sousuo"></use>
+                </svg>
+            </span>
+            <input type="text" placeholder="塞拉斯">
+        </div>
+    </header>
+    <div class="his">
+        <div class="ht">
+            <h3>搜索历史</h3>
+            <span>
+                <svg class="icon-delete " aria-hidden="true">
+                    <use xlink:href="#icon-shanchu_o"></use>
+                </svg>
+            </span>
+        </div>
+
+        <span class="search_his">葡萄牙</span>
+        <span class="search_his">世界杯</span>
+    </div>
+
+    <div class="people_find">
+        <h3>大家都在搜</h3>
+        <div class="find_content">
+            <span>塞拉斯
+                <svg class="icon-hot " aria-hidden="true">
+                    <use xlink:href="#icon-huo1"></use>
+                </svg>
+            </span>
+<!--             <span>火箭</span>
+            <span>势如破竹 当仁不让</span>
+            <span>球员评分</span>
+            <span>县委大院</span>
+            <span>快人一步就是赢</span>
+            <span>阳了</span>
+            <span>小米13</span>
+            <span>米德尔顿</span>
+            <span>胖虎</span> -->
+        </div>
+    </div>
+    <h3 class="Hot_list">热门话题榜</h3>
+    <div class="hot_list">
+    <div class="hupu_hot_list">
+        <ul>
+            <li class="hupu_hot_list_title">
+                <svg class="icon-hot " aria-hidden="true">
+                    <use xlink:href="#icon-huo"></use>
+                </svg>
+                <span>虎扑热榜</span>
+<!--             </li>
+            <li>
+                <a href="#"><span style=" color: rgb(208,53,49);">1</span> 鹈鹕双杀太阳</a>
+            </li>
+            <li>
+                <a href="#"><span style=" color: rgb(208,53,49);">2</span> C罗出局后首次发声</a>
+            </li>
+            <li>
+                <a href="#"><span style=" color: rgb(208,53,49);">3</span> 通信行程卡下线</a>
+            </li>
+            <li>
+                <a href="#">4 梁文博等6名台球运动员涉嫌赌球被停赛</a>
+            </li>
+            <li>
+                <a href="#">5 恩比德50+</a>
+            </li> -->
+        </ul>
+        <div class="Full_list">
+        <div class="full_list">
+            <span>完整榜单 ></span>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="weibo_hot_list">
+        <ul>
+            <li class="weibo_hot_list_title">
+                <svg class="icon-hot " aria-hidden="true">
+                    <use xlink:href="#icon-huo-copy"></use>
+                </svg>
+                <span>微博体育榜</span>
+            </li>
+<!--             <li>
+                <a href="#"><span style=" color: rgb(243,184,66);">1</span> C罗回去了</a>
+            </li>
+            <li>
+                <a href="#"><span style=" color: rgb(243,184,66);">2</span> 普通的卡塔尔人的一天</a>
+            </li>
+            <li>
+                <a href="#"><span style=" color: rgb(243,184,66);">3</span> 莫德里奇吹魔笛自己笑了</a>
+            </li> -->
+           <!--  <li>
+                <a href="#">4 姆巴佩被摸头后的反应</a>
+            </li>
+            <li>
+                <a href="#">5 梅西刮胡子了</a>
+            </li> -->
+        </ul>
+        <div class="Full_list">
+        <div class="full_list">
+            <span>完整榜单 ></span>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+        var json_hupu_resou = [
+               {
+                content: "1 鹈鹕双杀太阳"
+            },
+            {
+                content: "2 C罗出局后首次发声"
+            },
+            {
+                content: "3 通信行程卡下线"
+            },
+            {
+                content: "4 梁文博等6名台球运动员涉嫌赌球被停赛"
+            },
+            {
+                content: "5 恩比德50+"
+            }]
+
+        var hupu_hot_list = document.querySelector(".hupu_hot_list_title");
+        for (var l of json_hupu_resou) {
+            var nc = document.createElement("li");
+            nc.innerHTML = `
+                <a href="${l.link}">
+                    <a href="#">${l.content}</a>
+                </a>`;
+                hupu_hot_list.appendChild(nc);
+        }
+ 
+
+
+               var json_resou = [
+               {
+                content: "1 C罗回去了"
+            },
+            {
+                content: "2 普通的卡塔尔人的一天"
+            },
+            {
+                content: "3 莫德里奇吹魔笛自己笑了"
+            },
+            {
+                content: "4 姆巴佩被摸头后的反应"
+            },
+            {
+                content: "5 梅西刮胡子了"
+            }]
+
+        var weibo_hot_list = document.querySelector(".weibo_hot_list_title");
+        for (var h of json_resou) {
+            var nb = document.createElement("li");
+            nb.innerHTML = `
+                <a href="${h.link}">
+                    <a href="#">${h.content}</a>
+                </a>`;
+                weibo_hot_list.appendChild(nb);
+        }
+
+         var json_search=[{content:"火箭"},{content:"势如破竹 当仁不让"},{content:"球员评分"},{content:"县委大院"},{content:"快人一步就是赢"},{content:"阳了"},{content:"小米13"},{content:"米德尔顿"},{content:"胖虎"}]
+         var all_search=document.querySelector(".find_content");
+         for(var c of json_search){
+            var nd=document.createElement("span");
+            nd.innerHTML = `
+                <a href="${c.link}">
+                    <span>${c.content}</span>
+                </a>`;
+                all_search.appendChild(nd);
+         }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./swiper/swiper-bundle.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .swiper {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-grow:1;
+        }
+        img{
+            width: 414px;
+            height: 300px;
+        }
+        .top-left{
+            text-decoration: none;
+            float: left;
+            color: #000;
+            font-size: 10px;
+        }
+        .swiper-slide{
+            position: relative;
+        }
+        .swiper-slide p{
+            position: absolute;
+            left: 2px;
+            bottom: 2px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./swiper/swiper-bundle.js" type="text/javascript" charset="utf-8"></script>
+    <div class="top">
+        <a href="./index.html">
+            <span class="top-left">
+                返回
+            </span>
+        </a>
+
+    </div>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./hupu-img/assist.jpg"><p>闪闪发光的中年：梅西加冕背后，“隐秘而伟大的豪华助教团”</p></div>
+            <div class="swiper-slide"><img src="./hupu-img/aguero.png"><p>“编外人员”阿圭罗，如何成为阿根廷的“第二心脏”</p></div>
+            <div class="swiper-slide"><img src="./hupu-img/messi.png"><p>12岁的梅西给他写了一封信，信上是这么说的</p></div>
+            <div class="swiper-slide"><img src="./hupu-img/benzema.jpg"><p>阿斯：本泽马本可以在10天内恢复，是德尚要求他离开法国队</p></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            }})        
+    </script>
+</body>
+
+</html>
