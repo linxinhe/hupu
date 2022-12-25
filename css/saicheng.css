@@ -1,0 +1,107 @@
+body,html,h2{
+    padding: 0;
+    margin: 0;
+}
+h5, strong{
+    font-weight: 400;
+}
+
+.box{
+    position: relative;
+    display: block;
+}
+.box h2{
+    height: 28px;
+    background: rgb(240, 241, 245);
+    font-size: 13px;
+    line-height: 17px;
+    color: gray;
+    line-height: 28px;
+    text-indent: 16px;
+    font-weight: 400;
+    top: 0;
+    z-index: 1;    
+}
+.box .match-list .match-information {
+    display: flex;
+    height: 78px;
+    border: .5px solid rgb(239, 239, 239);
+    border-left: none;
+    border-right: none;
+}
+.box .match-list .match-information .match-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 98px;
+}
+.box .match-list .match-information .match-header strong{
+    font-size: 15px;
+    color: #24262b;
+    line-height: 18px;
+    width: 100%;
+    text-indent: 16px;
+    box-sizing: border-box;
+}
+.box .match-list .match-information .match-header span{
+    font-size: 5px;
+    color: #89909f;
+    line-height: 17px;
+    width: 100%;
+    text-indent: 16px;
+}
+.box .match-list .match-information .match-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border-right: .5px solid rgb(240, 241, 245);
+}
+.box .match-list .match-information .match-result .line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: space-between;
+}
+.box .match-list .match-information .match-result .line img{
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+.box .match-list .match-information .match-result .line h5{
+    flex-grow: 1;
+    line-height: 18px;
+    font-size: 15px;
+    color: rgb(44, 44, 52);
+}
+.box .match-list .match-information .match-result .line strong{
+    padding-right: 12px;
+    font-size: 15px;
+    line-height: 18px;
+}
+.box .match-list .match-information .match-result .line strong.win {
+    color: #24262b;
+}
+.box .match-list .match-information .match-result .line strong.lose{
+    color: #89909f;
+}
+.box .match-list .match-information .match-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 78px;
+    color: #24262b;
+    font-size: 15px;
+    line-height: 18px;
+}
+.box .match-list .match-information .match-end a{
+    font-size: 13px;
+    line-height: 17px;
+    color: #89909f;
+}

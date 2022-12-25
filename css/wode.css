@@ -1,0 +1,316 @@
+body,ul,p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(241, 242, 246);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+.top-Left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-Left-inf {
+    display: flex;
+    padding-left: 25px;
+}
+
+.top-Right-inf {
+    padding-top: 20px;
+}
+
+.coin {
+    display: flex;
+}
+
+.coin-left {
+    margin-left: 5px;
+}
+
+.coin-right {
+    margin-left: 15px;
+}
+
+.icon-function-box {
+    border-right: 1px solid #89909f;
+}
+
+
+.icon-middle {
+    background-color: #fff;
+}
+
+.headshot {
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+}
+.headshot li{
+    margin: 50px;
+}
+
+.detail {
+    color: #89909f;
+}
+
+.icon-Top {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    overflow: hidden;
+}
+
+.icon-top-Right {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.icon-function {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.15em;
+    overflow: hidden;
+}
+
+.icon_middle {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.15em;
+    overflow: hidden;
+}
+
+.icon_bottom {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.15em;
+    overflow: hidden;
+}
+
+.icon_Bottom {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    overflow: hidden;
+}
+
+.top>ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.top li {
+    text-align: center;
+    margin-left: 25px;
+}
+
+.top p {
+    color: #333;
+     line-height: 26px; 
+    letter-spacing: 1px;
+    font-size: .6rem;
+}
+
+.icon-top {
+    color: #333;
+    line-height: 26px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #fff;
+    margin-top: 16px;
+}
+
+.icon-top>ul {
+    display: flex;
+    margin: 0 5px;
+}
+
+.icon-top li {
+    text-align: center;
+    width: 25%;
+    font-size: .6rem;
+}
+
+.icon-top p {
+    color: #333;
+    line-height: 26px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.icon-middle>ul {
+    display: flex;
+    padding: 5px 10px;
+}
+
+.icon-middle li {
+    text-align: center;
+    width: 25%;
+}
+
+.icon-middle p {
+    color: #333;
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-size: .6rem;
+}
+
+.middle-box-top {
+
+    background-color: #fff;
+}
+
+.middle-box-bottom {
+    border-bottom: 1px solid rgb(241, 242, 246);
+    background-color: #fff;
+}
+
+.middle-box-bottom-bottom {
+    margin-top: 8px;
+}
+
+.middle-box-bottom-bottom p {
+    font-size: 14px;
+}
+
+.slist {
+    display: flex;
+}
+
+.short-img {
+    width: 64px;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.long-img {
+    margin: 0 10px;
+}
+
+
+.slist img {
+    width: 100%;
+}
+
+.slist p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slist_bottom {
+    display: flex;
+    margin: 0 5px;
+}
+
+.slist_bottom>li {
+    width: 20%;
+    margin: 0 5px;
+}
+
+
+
+.slist_bottom img {
+    width: 100%;
+}
+
+.slist_bottom p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.bottom-icon {
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.bottom-icon_bottom {
+    display: flex;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.bottom-box li {
+    text-align: center;
+    width: 20%;
+}
+
+.bottom-box {
+    background-color: #fff;
+}
+
+.inf-bottom {
+    text-align: center;
+    background-color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+ .bottom-span {
+    text-align: center;
+} 
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: black;
+    padding-bottom: 0;
+}
+
+.bnav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9;
+    width: 100%;
+}
+
+body {
+    margin-bottom: 50px;
+}
+
+.bnav>ul {
+    display: flex;
+}
+
+.bnav li {
+    text-align: center;
+    width: 20%;
+}
+
+.icon {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.bnav p {
+    color: #333;
+    line-height: 26px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
